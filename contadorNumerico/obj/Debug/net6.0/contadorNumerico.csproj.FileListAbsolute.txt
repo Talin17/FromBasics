@@ -1,0 +1,15 @@
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\bin\Debug\net6.0\contadorNumerico.exe
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\bin\Debug\net6.0\contadorNumerico.deps.json
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\bin\Debug\net6.0\contadorNumerico.runtimeconfig.json
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\bin\Debug\net6.0\contadorNumerico.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\bin\Debug\net6.0\contadorNumerico.pdb
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.csproj.AssemblyReference.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.AssemblyInfoInputs.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.AssemblyInfo.cs
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.csproj.CoreCompileInputs.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\refint\contadorNumerico.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.pdb
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\contadorNumerico.genruntimeconfig.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\contadorNumerico\obj\Debug\net6.0\ref\contadorNumerico.dll

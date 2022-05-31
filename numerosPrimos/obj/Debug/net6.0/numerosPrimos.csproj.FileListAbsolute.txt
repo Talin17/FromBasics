@@ -1,0 +1,15 @@
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\bin\Debug\net6.0\numerosPrimos.exe
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\bin\Debug\net6.0\numerosPrimos.deps.json
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\bin\Debug\net6.0\numerosPrimos.runtimeconfig.json
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\bin\Debug\net6.0\numerosPrimos.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\bin\Debug\net6.0\numerosPrimos.pdb
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.csproj.AssemblyReference.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.AssemblyInfoInputs.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.AssemblyInfo.cs
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.csproj.CoreCompileInputs.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\refint\numerosPrimos.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.pdb
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\numerosPrimos.genruntimeconfig.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosPrimos\obj\Debug\net6.0\ref\numerosPrimos.dll
