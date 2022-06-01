@@ -1,14 +1,21 @@
-﻿int valor1 = 0;
-int valor2 = 1;
+﻿int numeroUser = 0;
+int divisibles = 0;
 
-Console.WriteLine("Introducir la cantidad de numeros primos");
-valor1 = Int32.Parse(Console.ReadLine());
+Console.WriteLine("Favor ingresar numero");
+numeroUser = Int32.Parse(Console.ReadLine());
 
-for (int i = 0; valor2 <= valor1; i++)
+for (int i = 1; i < numeroUser; i++)
 {
-    if (i % 2 !=0 )
+    divisibles = 0;
+    for (int j = 1; j <= i; j++)
     {
-        Console.WriteLine($"La posicion "+valor2+" es un numero primo " + i);
-        valor2++;
+        if (i % j == 0)
+        {
+            divisibles++;
+        }
+    }
+    if (divisibles <= 2)
+    {
+        Console.WriteLine($"{i} Es primo");
     }
 }
