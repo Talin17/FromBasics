@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "numerosPrimos", "..\numeros
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "serieFibonacci", "..\serieFibonacci\serieFibonacci.csproj", "{F896831A-6B48-44AD-AA4A-69DD4166C601}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "numeroRomano", "..\numeroRomano\numeroRomano.csproj", "{B3F65717-0591-4B9C-B7F7-EC70F15D3E4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "numeroRomano", "..\numeroRomano\numeroRomano.csproj", "{B3F65717-0591-4B9C-B7F7-EC70F15D3E4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

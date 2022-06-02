@@ -1,0 +1,17 @@
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\bin\Debug\net6.0-windows\numerosRomanosForms.exe
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\bin\Debug\net6.0-windows\numerosRomanosForms.deps.json
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\bin\Debug\net6.0-windows\numerosRomanosForms.runtimeconfig.json
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\bin\Debug\net6.0-windows\numerosRomanosForms.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\bin\Debug\net6.0-windows\numerosRomanosForms.pdb
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.csproj.AssemblyReference.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.Form1.resources
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.csproj.GenerateResource.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.AssemblyInfoInputs.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.AssemblyInfo.cs
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.csproj.CoreCompileInputs.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\refint\numerosRomanosForms.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.pdb
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\numerosRomanosForms.genruntimeconfig.cache
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numerosRomanosForms\obj\Debug\net6.0-windows\ref\numerosRomanosForms.dll
