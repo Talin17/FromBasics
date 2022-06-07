@@ -13,7 +13,7 @@ namespace numeroRomanoFormDB
         string getUnidad(int unidad)
         {
            
-            string consulta = "Select * from Unidad where Valor = '" + unidad + "'";
+            string consulta = "Select * from Unidad where Valor = '" + unidad + "'AND Tipo = 'Unidad'" ;
             SqlCommand sqlCommand = new SqlCommand(consulta, conexion);
             SqlDataReader reader = sqlCommand.ExecuteReader();
             string noRomano = "";
@@ -36,7 +36,7 @@ namespace numeroRomanoFormDB
         string getDecena(int decena)
         {
             
-            string consulta = "Select * from Decena where Valor = '" + decena + "'";
+            string consulta = "Select * from Unidad where Valor = '" + decena + "'AND tipo = 'Decena'";
             SqlCommand sqlCommand = new SqlCommand(consulta, conexion);
             SqlDataReader reader = sqlCommand.ExecuteReader();
             string noRomano = "";
@@ -59,7 +59,7 @@ namespace numeroRomanoFormDB
         string getCentena(int centena)
         {
             
-            string consulta = "Select * from Centena where Valor = '" + centena + "'";
+            string consulta = "Select * from Unidad where Valor = '" + centena + "'AND Tipo = 'Centena'";
             SqlCommand sqlCommand = new SqlCommand(consulta, conexion);
             SqlDataReader reader = sqlCommand.ExecuteReader();
             string noRomano = "";
