@@ -44,3 +44,7 @@ C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-w
 C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-windows\numeroRomanoFormDB.pdb
 C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-windows\numeroRomanoFormDB.genruntimeconfig.cache
 C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-windows\ref\numeroRomanoFormDB.dll
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-windows\numeroRomanoFormDB.MenuStripRomano.resources
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-windows\numeroRomanoFormDB.MantenimientoRomano.resources
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-windows\numeroRomanoFormDB.AgregarRomano.resources
+C:\Users\Sjhm2\Documents\GitHub\FromBasics\numeroRomanoFormDB\obj\Debug\net6.0-windows\numeroRomanoFormDB.ConvertirRomano.resources

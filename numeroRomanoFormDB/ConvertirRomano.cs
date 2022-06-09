@@ -1,7 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.Sql;
 using System.Data.SqlClient;
+
 namespace numeroRomanoFormDB
 {
-    public partial class Form1 : MenuStripRomano
+    public partial class ConvertirRomano : MenuStripRomano
     {
         SqlConnection conexion = new SqlConnection("server=(localdb)\\mssqllocaldb; database=numerosRomanos ; integrated security = true");
 
@@ -27,7 +38,7 @@ namespace numeroRomanoFormDB
             reader.Close();
             conexion.Close();
             return noRomano;
-          
+
         }
         string getDecena(int decena)
         {
@@ -40,7 +51,7 @@ namespace numeroRomanoFormDB
             {
                 while (reader.Read())
                 {
-                    noRomano = reader.GetString(1);
+                    noRomano = reader.GetString(0);
 
                 }
             }
@@ -51,11 +62,11 @@ namespace numeroRomanoFormDB
             reader.Close();
             conexion.Close();
             return noRomano;
-         
+
         }
         string getCentena(int centena)
         {
-          conexion.Open();
+            conexion.Open();
             string consulta = "Select * from Unidad where Valor = '" + centena + "'AND Tipo = 'Centena'";
             SqlCommand sqlCommand = new SqlCommand(consulta, conexion);
             SqlDataReader reader = sqlCommand.ExecuteReader();
@@ -64,7 +75,7 @@ namespace numeroRomanoFormDB
             {
                 while (reader.Read())
                 {
-                    noRomano = reader.GetString(1);
+                    noRomano = reader.GetString(0);
 
                 }
             }
@@ -75,21 +86,21 @@ namespace numeroRomanoFormDB
             reader.Close();
             conexion.Close();
             return noRomano;
-          
+
         }
 
         int unidad = 0;
         int decena = 0;
         int centena = 0;
         int numero = 0;
-        public Form1()
+        public ConvertirRomano()
         {
             InitializeComponent();
         }
 
         public void Operacion()
         {
-           
+
             numero = Convert.ToInt32(txtCantidad.Text);
 
             centena = (numero / 100) * 100;
@@ -103,10 +114,15 @@ namespace numeroRomanoFormDB
             Convert.ToString(decena);
             Convert.ToString(unidad);
             txtRomano.Text = $"{getCentena(centena)}{getDecena(decena)}{getUnidad(unidad)}";
-           
+
         }
 
         private void btnConvertir_Click_1(object sender, EventArgs e)
+        {
+            Operacion();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             Operacion();
         }
