@@ -8,110 +8,81 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using numeroRomanoFormDB.ModelDB;
 
 namespace numeroRomanoFormDB
 {
-
     public partial class AgregarRomano : Form
     {
-        SqlConnection conexion = new SqlConnection("server=(localdb)\\mssqllocaldb; database=numerosRomanos ; integrated security = true");
-        private void conectar()
-        {
-            conexion.Open();
-        }
-        private void desconectar()
-        {
-            conexion.Close();
-        }
+
         public AgregarRomano()
         {
+
             InitializeComponent();
-            read();
+            Read();
         }
-        private void read()
+
+
+
+        private void Read()
         {
-            conectar();
-            string read = "select * from Unidad";
-            SqlCommand sqlCommand = new SqlCommand(read, conexion);
-            SqlDataReader reader = sqlCommand.ExecuteReader();
-            dataGridAdd.Rows.Clear();
-            while (reader.Read())
-            {
-                dataGridAdd.Rows.Add(
-                    reader["Unidades"].ToString(),
-                    reader["Valor"].ToString(),
-                    reader["Tipo"].ToString(),
-                    reader["ID"].ToString());
-            }
-            desconectar();
+
+            var db = new numerosRomanosContext();
+            var list = db.Unidads.ToList();
+            dataGridAdd.DataSource = list;
+
+
         }
         private void Add()
         {
-            conectar();
-            string add = $"insert into Unidad(Unidades,Valor,Tipo) values('{noRomanoTxt.Text}','{valorRom.SelectedItem}','{tipoRom.SelectedItem}')";
-            SqlCommand sqlCommand = new SqlCommand(add, conexion);
-            SqlDataReader reader = sqlCommand.ExecuteReader();
-            dataGridAdd.Rows.Clear();
-            while (reader.Read())
-            {
-                dataGridAdd.Rows.Add(
-                    reader["Unidades"].ToString(),
-                    reader["Valor"].ToString(),
-                    reader["Tipo"].ToString());
-            }
-            desconectar();
+            var db = new numerosRomanosContext();
+            Unidad addUnidad = new Unidad();
+            addUnidad.Unidades = noRomanoTxt.Text;
+            addUnidad.Valor = valorRom.Text;
+            addUnidad.Tipo = tipoRom.Text;
+            db.Unidads.Add(addUnidad);
+            db.SaveChanges();
+            Read();
         }
 
         private void Update()
         {
-            conectar();
-            string update = $"update Unidad set Valor = '{valorRom.SelectedItem}',Tipo = '{tipoRom.SelectedItem}' WHERE ID = '{txtID.Text}'";
-            SqlCommand sqlCommand = new SqlCommand(update, conexion);
-            SqlDataReader reader = sqlCommand.ExecuteReader();
-            dataGridAdd.Rows.Clear();
-            while (reader.Read())
-            {
-                dataGridAdd.Rows.Add(
-                    reader["Unidades"].ToString(),
-                    reader["Valor"].ToString(),
-                    reader["Tipo"].ToString()
-                    );
-            }
-            desconectar();
+            var db = new numerosRomanosContext();
+            int id = Convert.ToInt32(txtID.Text);
+            var unidad = db.Unidads.First(m =>m.Id == id);
+            unidad.Unidades = noRomanoTxt.Text;
+            unidad.Valor = valorRom.Text;
+            unidad.Tipo = tipoRom.Text;
+            db.Unidads.Update(unidad);
+            db.SaveChanges();
+            Read();
         }
         private void Delete()
         {
-            conectar();
-            string delete = $"Delete from Unidad where ID ='{txtID.Text}'";
-            SqlCommand sqlCommand = new SqlCommand(delete, conexion);
-            SqlDataReader reader = sqlCommand.ExecuteReader();
-            dataGridAdd.Rows.Clear();
-            while (reader.Read())
-            {
-                dataGridAdd.Rows.Add(
-                    reader["Unidades"].ToString(),
-                    reader["Valor"].ToString(),
-                    reader["Tipo"].ToString());
-            }
-            desconectar();
-                    
-           
+            var db = new numerosRomanosContext();
+            int id = Convert.ToInt32(txtID.Text);
+            var unidad = db.Unidads.First(m => m.Id == id);
+            db.Unidads.Remove(unidad);
+            db.SaveChanges();
+            Read();
+
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Add();
             MessageBox.Show("Agregado correctamente");
             noRomanoTxt.Text = "";
-            read();
+            Read();
         }
 
         private void dataGridAdd_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            noRomanoTxt.Text = this.dataGridAdd.CurrentRow.Cells[0].Value.ToString();
-            valorRom.SelectedItem = this.dataGridAdd.CurrentRow.Cells[1].Value.ToString();
-            tipoRom.SelectedItem = this.dataGridAdd.CurrentRow.Cells[2].Value.ToString();
-            txtID.Text = this.dataGridAdd.CurrentRow.Cells[3].Value.ToString();
-            
+            txtID.Text = this.dataGridAdd.CurrentRow.Cells[0].Value.ToString();
+            noRomanoTxt.Text = this.dataGridAdd.CurrentRow.Cells[1].Value.ToString();
+            valorRom.SelectedItem = this.dataGridAdd.CurrentRow.Cells[2].Value.ToString();
+            tipoRom.SelectedItem = this.dataGridAdd.CurrentRow.Cells[3].Value.ToString();
+
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -120,7 +91,7 @@ namespace numeroRomanoFormDB
             MessageBox.Show("Se actualizo el registro");
             noRomanoTxt.Text = "";
             txtID.Text = "";
-            read();
+            Read();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -129,7 +100,7 @@ namespace numeroRomanoFormDB
             MessageBox.Show("Se elimino el registro");
             noRomanoTxt.Text = "";
             txtID.Text = "";
-            read();
+            Read();
         }
     }
 }

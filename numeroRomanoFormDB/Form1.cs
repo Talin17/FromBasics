@@ -1,9 +1,10 @@
 using System.Data.SqlClient;
+using numeroRomanoFormDB.ModelDB;
 namespace numeroRomanoFormDB
 {
     public partial class Form1 : MenuStripRomano
     {
-        SqlConnection conexion = new SqlConnection("server=(localdb)\\mssqllocaldb; database=numerosRomanos ; integrated security = true");
+       
 
         string getUnidad(int unidad)
         {
@@ -25,15 +26,13 @@ namespace numeroRomanoFormDB
                 noRomano = "";
             }
             reader.Close();
-            conexion.Close();
             return noRomano;
           
         }
         string getDecena(int decena)
         {
-            conexion.Open();
             string consulta = "Select * from Unidad where Valor = '" + decena + "'AND tipo = 'Decena'";
-            SqlCommand sqlCommand = new SqlCommand(consulta, conexion);
+            SqlCommand sqlCommand = new SqlCommand(consulta);
             SqlDataReader reader = sqlCommand.ExecuteReader();
             string noRomano = "";
             if (reader.HasRows)
@@ -49,13 +48,11 @@ namespace numeroRomanoFormDB
                 noRomano = "";
             }
             reader.Close();
-            conexion.Close();
             return noRomano;
          
         }
         string getCentena(int centena)
         {
-          conexion.Open();
             string consulta = "Select * from Unidad where Valor = '" + centena + "'AND Tipo = 'Centena'";
             SqlCommand sqlCommand = new SqlCommand(consulta, conexion);
             SqlDataReader reader = sqlCommand.ExecuteReader();

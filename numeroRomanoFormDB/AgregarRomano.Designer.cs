@@ -35,10 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridAdd = new System.Windows.Forms.DataGridView();
-            this.Unidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -49,7 +45,7 @@
             // 
             // noRomanoTxt
             // 
-            this.noRomanoTxt.Location = new System.Drawing.Point(22, 58);
+            this.noRomanoTxt.Location = new System.Drawing.Point(94, 58);
             this.noRomanoTxt.Name = "noRomanoTxt";
             this.noRomanoTxt.Size = new System.Drawing.Size(116, 23);
             this.noRomanoTxt.TabIndex = 0;
@@ -67,7 +63,7 @@
             "7",
             "8",
             "9"});
-            this.valorRom.Location = new System.Drawing.Point(159, 58);
+            this.valorRom.Location = new System.Drawing.Point(236, 58);
             this.valorRom.Name = "valorRom";
             this.valorRom.Size = new System.Drawing.Size(65, 23);
             this.valorRom.TabIndex = 1;
@@ -80,7 +76,7 @@
             "Decena",
             "Centena",
             "Milesima"});
-            this.tipoRom.Location = new System.Drawing.Point(271, 58);
+            this.tipoRom.Location = new System.Drawing.Point(340, 58);
             this.tipoRom.Name = "tipoRom";
             this.tipoRom.Size = new System.Drawing.Size(121, 23);
             this.tipoRom.TabIndex = 2;
@@ -88,7 +84,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 26);
+            this.label1.Location = new System.Drawing.Point(94, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 15);
             this.label1.TabIndex = 3;
@@ -97,7 +93,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 26);
+            this.label2.Location = new System.Drawing.Point(236, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 15);
             this.label2.TabIndex = 4;
@@ -106,7 +102,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(271, 26);
+            this.label3.Location = new System.Drawing.Point(340, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 15);
             this.label3.TabIndex = 5;
@@ -116,11 +112,6 @@
             // 
             this.dataGridAdd.AllowUserToDeleteRows = false;
             this.dataGridAdd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridAdd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Unidades,
-            this.Valor,
-            this.Tipo,
-            this.ID});
             this.dataGridAdd.Location = new System.Drawing.Point(12, 105);
             this.dataGridAdd.Name = "dataGridAdd";
             this.dataGridAdd.ReadOnly = true;
@@ -128,30 +119,6 @@
             this.dataGridAdd.Size = new System.Drawing.Size(380, 215);
             this.dataGridAdd.TabIndex = 6;
             this.dataGridAdd.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridAdd_CellDoubleClick);
-            // 
-            // Unidades
-            // 
-            this.Unidades.HeaderText = "Unidades";
-            this.Unidades.Name = "Unidades";
-            this.Unidades.ReadOnly = true;
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "Valor";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
             // 
             // btnAdd
             // 
@@ -175,15 +142,16 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(413, 58);
+            this.txtID.Location = new System.Drawing.Point(22, 58);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(40, 23);
             this.txtID.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(413, 26);
+            this.label4.Location = new System.Drawing.Point(22, 40);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 15);
             this.label4.TabIndex = 10;
@@ -234,11 +202,7 @@
         private Label label3;
         private DataGridView dataGridAdd;
         private Button btnAdd;
-        private DataGridViewTextBoxColumn Unidades;
-        private DataGridViewTextBoxColumn Valor;
-        private DataGridViewTextBoxColumn Tipo;
         private Button btnEdit;
-        private DataGridViewTextBoxColumn ID;
         private TextBox txtID;
         private Label label4;
         private Button btnDelete;
